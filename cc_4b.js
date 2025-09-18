@@ -6,8 +6,9 @@ let products= [
 {sku: "sku-005", name:"Baseball Hat",category:"apparel",price:5,inventory:150}
 ];
 
-for (let product of products) {
-    let discount = 0
+for (let product of products) // Sets up switch, creates a "box" of array above 
+{
+    let discount;
 
     switch (product.category) {
         case "electronics":
@@ -21,7 +22,8 @@ for (let product of products) {
             break;
         default:
             discount = 0
+}
+}
+let customerType = "customer";
+if (customerType === "senior")
 
-}
-    
-}
